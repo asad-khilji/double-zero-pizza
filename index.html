@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Double Zero Pizza Co. — Quality Pizza, Zero Compromise</title>
+  <meta name="description" content="Tired of the same old pizza? Double Zero Pizza Co. serves bold, high-quality pizzas with zero compromise." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Top Nav -->
+  <header class="topbar" id="top">
+    <nav class="nav container" aria-label="Primary">
+      <a class="brand" href="#top">
+        <img class="brand__logo" src="logo.png" alt="Double Zero Pizza Co." />
+        <span class="brand__name">Double Zero</span>
+      </a>
+
+      <button class="nav__toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav__links" data-nav-links>
+        <a href="#menu">Menu</a>
+        <a href="#why">Why us</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#locations">Locations</a>
+        <a class="btn btn--ghost" href="#menu">View Menu</a>
+        <a class="btn btn--primary" href="#order">Order Now</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true"></div>
+
+      <div class="container hero__content">
+        <div class="hero__copy">
+          <div class="badge">
+            <span class="badge__dot" aria-hidden="true"></span>
+            <span>Fresh ingredients • Stone-hot bake • Zero compromise</span>
+          </div>
+
+          <h1>
+            Tired of the <span class="accent">same old pizza</span>?
+            <span class="subhead">Meet your new favorite slice.</span>
+          </h1>
+
+          <p class="lead">
+            We craft bold, high-quality pizzas with real ingredients, slow-fermented dough,
+            and craveable combinations — because “good enough” isn’t good enough.
+          </p>
+
+          <div class="hero__cta" id="order">
+            <a class="btn btn--primary btn--lg" href="#menu">Order a Pizza</a>
+            <a class="btn btn--ghost btn--lg" href="#why">What makes us different</a>
+          </div>
+
+          <div class="hero__stats" role="list" aria-label="Highlights">
+            <div class="stat" role="listitem">
+              <div class="stat__num">24h</div>
+              <div class="stat__label">slow-fermented dough</div>
+            </div>
+            <div class="stat" role="listitem">
+              <div class="stat__num">100%</div>
+              <div class="stat__label">real cheese & sauces</div>
+            </div>
+            <div class="stat" role="listitem">
+              <div class="stat__num">0</div>
+              <div class="stat__label">compromise on quality</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__card">
+          <div class="card">
+            <div class="card__top">
+              <h2 class="card__title">Today’s Top Picks</h2>
+              <p class="card__subtitle">Fan favorites, made fresh.</p>
+            </div>
+
+            <ul class="picklist">
+              <li class="pick">
+                <div class="pick__name">Inferno Pepperoni</div>
+                <div class="pick__desc">spicy honey • crispy pepperoni • mozzarella</div>
+                <div class="pick__tag">Best Seller</div>
+              </li>
+              <li class="pick">
+                <div class="pick__name">Truffle Mushroom</div>
+                <div class="pick__desc">garlic cream • wild mushrooms • parmesan</div>
+                <div class="pick__tag">Signature</div>
+              </li>
+              <li class="pick">
+                <div class="pick__name">Garden Zero</div>
+                <div class="pick__desc">roasted veggies • basil • house red sauce</div>
+                <div class="pick__tag">Veg</div>
+              </li>
+            </ul>
+
+            <div class="card__bottom">
+              <div class="delivery">
+                <div class="delivery__icon" aria-hidden="true">⚡</div>
+                <div>
+                  <div class="delivery__title">Fast pickup & delivery</div>
+                  <div class="delivery__sub">Hot, fresh, right on time.</div>
+                </div>
+              </div>
+              <a class="btn btn--primary w-full" href="#menu">Explore the Menu</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu -->
+    <section class="section" id="menu">
+      <div class="container">
+        <div class="section__head">
+          <h2>Pizza that actually tastes like <span class="accent">quality</span>.</h2>
+          <p>Classic comfort, upgraded — with better dough, better toppings, and better balance.</p>
+        </div>
+
+        <div class="grid grid--3">
+          <article class="menu-card">
+            <div class="menu-card__top">
+              <h3>Classic Pepperoni</h3>
+              <span class="price">$14</span>
+            </div>
+            <p>House red sauce, mozzarella, crispy pepperoni, oregano.</p>
+            <div class="menu-card__meta">
+              <span class="pill">Crowd Favorite</span>
+              <span class="pill pill--muted">Ready in 15–20</span>
+            </div>
+          </article>
+
+          <article class="menu-card">
+            <div class="menu-card__top">
+              <h3>Truffle Mushroom</h3>
+              <span class="price">$16</span>
+            </div>
+            <p>Garlic cream, wild mushrooms, parmesan, truffle drizzle.</p>
+            <div class="menu-card__meta">
+              <span class="pill">Signature</span>
+              <span class="pill pill--muted">Rich & savory</span>
+            </div>
+          </article>
+
+          <article class="menu-card">
+            <div class="menu-card__top">
+              <h3>Spicy Honey Chicken</h3>
+              <span class="price">$16</span>
+            </div>
+            <p>Roasted chicken, chili flakes, mozzarella, hot honey finish.</p>
+            <div class="menu-card__meta">
+              <span class="pill">Hot Right Now</span>
+              <span class="pill pill--muted">Sweet heat</span>
+            </div>
+          </article>
+
+          <article class="menu-card">
+            <div class="menu-card__top">
+              <h3>Garden Zero</h3>
+              <span class="price">$15</span>
+            </div>
+            <p>Roasted veggies, basil, mozzarella, house red sauce.</p>
+            <div class="menu-card__meta">
+              <span class="pill">Vegetarian</span>
+              <span class="pill pill--muted">Fresh</span>
+            </div>
+          </article>
+
+          <article class="menu-card">
+            <div class="menu-card__top">
+              <h3>4-Cheese</h3>
+              <span class="price">$15</span>
+            </div>
+            <p>Mozzarella, parmesan, provolone, ricotta, cracked pepper.</p>
+            <div class="menu-card__meta">
+              <span class="pill">Cheesy</span>
+              <span class="pill pill--muted">Melty</span>
+            </div>
+          </article>
+
+          <article class="menu-card">
+            <div class="menu-card__top">
+              <h3>Build Your Own</h3>
+              <span class="price">$13+</span>
+            </div>
+            <p>Pick a base, add toppings, and create your perfect pie.</p>
+            <div class="menu-card__meta">
+              <span class="pill">Custom</span>
+              <span class="pill pill--muted">Your rules</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="section__cta">
+          <a class="btn btn--primary btn--lg" href="#order">Start an Order</a>
+          <a class="btn btn--ghost btn--lg" href="#locations">Find a Location</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Us -->
+    <section class="section section--alt" id="why">
+      <div class="container">
+        <div class="section__head">
+          <h2>Not just another pizza place.</h2>
+          <p>We’re obsessed with the details — from dough to drizzle.</p>
+        </div>
+
+        <div class="grid grid--3">
+          <div class="feature">
+            <div class="feature__icon" aria-hidden="true">🔥</div>
+            <h3>Stone-hot bake</h3>
+            <p>High heat for a crisp edge, airy crust, and perfect char.</p>
+          </div>
+          <div class="feature">
+            <div class="feature__icon" aria-hidden="true">🧀</div>
+            <h3>Real ingredients</h3>
+            <p>Better cheese, better sauce, better toppings — full stop.</p>
+          </div>
+          <div class="feature">
+            <div class="feature__icon" aria-hidden="true">⏳</div>
+            <h3>Slow dough</h3>
+            <p>Fermented longer for flavor you can actually taste.</p>
+          </div>
+        </div>
+
+        <div class="callout">
+          <div class="callout__text">
+            <h3>Quality pizza, <span class="accent">zero compromise</span>.</h3>
+            <p>Try one bite and you’ll know: this is what pizza should’ve been all along.</p>
+          </div>
+          <a class="btn btn--primary" href="#order">Order Now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="section" id="reviews">
+      <div class="container">
+        <div class="section__head">
+          <h2>People don’t just like it… they <span class="accent">crave</span> it.</h2>
+          <p>Real feedback from real pizza lovers.</p>
+        </div>
+
+        <div class="grid grid--3">
+          <figure class="review">
+            <blockquote>
+              “Finally a pizza that isn’t greasy and boring. The crust is unreal.”
+            </blockquote>
+            <figcaption>— Alex M.</figcaption>
+          </figure>
+
+          <figure class="review">
+            <blockquote>
+              “The truffle mushroom is next level. You can taste the quality.”
+            </blockquote>
+            <figcaption>— Sana K.</figcaption>
+          </figure>
+
+          <figure class="review">
+            <blockquote>
+              “Hot, fast delivery and every slice hits. Zero compromise is right.”
+            </blockquote>
+            <figcaption>— Daniel R.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Locations / Newsletter -->
+    <section class="section section--alt" id="locations">
+      <div class="container split">
+        <div>
+          <h2>Find Double Zero near you.</h2>
+          <p class="lead">
+            Dine in, pickup, or delivery. Fresh pizzas, made to order — every time.
+          </p>
+
+          <div class="locations">
+            <div class="location">
+              <div class="location__title">Downtown</div>
+              <div class="location__meta">Mon–Sun • 11am–11pm</div>
+            </div>
+            <div class="location">
+              <div class="location__title">Riverside</div>
+              <div class="location__meta">Mon–Sun • 12pm–10pm</div>
+            </div>
+            <div class="location">
+              <div class="location__title">Uptown</div>
+              <div class="location__meta">Tue–Sun • 11am–10pm</div>
+            </div>
+          </div>
+
+          <div class="mini-cta">
+            <a class="btn btn--primary" href="#order">Order Online</a>
+            <a class="btn btn--ghost" href="#menu">Browse Menu</a>
+          </div>
+        </div>
+
+        <div class="panel">
+          <h3>Get deals & new drops</h3>
+          <p>Join our list for limited specials, new pizzas, and VIP offers.</p>
+
+          <form class="form" action="#" method="post">
+            <label class="sr-only" for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+            <button class="btn btn--primary" type="submit">Subscribe</button>
+            <p class="form__note">No spam. Just pizza energy.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img class="footer__logo" src="logo.png" alt="Double Zero Pizza Co." />
+        <div>
+          <div class="footer__name">Double Zero Pizza Co.</div>
+          <div class="footer__tag">Tired of the same old pizza? Good. So are we.</div>
+        </div>
+      </div>
+
+      <div class="footer__links">
+        <a href="#menu">Menu</a>
+        <a href="#why">Why us</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#locations">Locations</a>
+      </div>
+
+      <div class="footer__fine">
+        <span>© <span id="year"></span> Double Zero Pizza Co. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Lightweight mobile nav toggle + year
+    const toggle = document.querySelector('.nav__toggle');
+    const links = document.querySelector('[data-nav-links]');
+    toggle?.addEventListener('click', () => {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!expanded));
+      links.classList.toggle('is-open');
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
