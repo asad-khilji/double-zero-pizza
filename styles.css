@@ -619,3 +619,85 @@ h1{
   .nav__links.is-open{ display: flex; }
   .nav__links a{ padding: 10px 12px; }
 }
+
+/* Coming Soon blocks */
+.coming{
+  padding: 6px 16px 16px;
+  display: grid;
+  gap: 10px;
+}
+
+.coming__row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.10);
+}
+
+.coming__label{
+  color: rgba(255,255,255,0.70);
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.coming__value{
+  color: rgba(255,255,255,0.92);
+  font-weight: 800;
+  font-size: 12.5px;
+  text-align: right;
+}
+
+.divider{
+  height: 1px;
+  background: rgba(255,255,255,0.10);
+  margin: 6px 2px;
+}
+
+.countdown{
+  padding: 12px;
+  border-radius: 14px;
+  background: radial-gradient(420px 220px at 20% 0%, rgba(255,90,31,0.18), transparent 60%),
+              rgba(0,0,0,0.18);
+  border: 1px solid rgba(255,90,31,0.18);
+}
+
+.countdown__title{
+  font-weight: 900;
+  letter-spacing: -0.01em;
+}
+
+.countdown__hint{
+  margin-top: 4px;
+  color: rgba(255,255,255,0.68);
+  font-weight: 650;
+  font-size: 12.5px;
+}
+
+.menu-card--soon{
+  position: relative;
+  overflow: hidden;
+}
+
+.menu-card--soon::after{
+  content: "";
+  position: absolute;
+  inset: -40px;
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(255,255,255,0.06) 0px,
+    rgba(255,255,255,0.06) 10px,
+    transparent 10px,
+    transparent 20px
+  );
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+.price--soon{
+  background: rgba(255,90,31,0.12);
+  border-color: rgba(255,90,31,0.18);
+}
